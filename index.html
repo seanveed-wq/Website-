@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StepUp | Premium Shoe Store</title>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>Step<span>Up</span></h1>
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="shop.html#new">New Arrivals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <button aria-label="Search"><i class="fas fa-search"></i></button>
+            <a href="cart.html" aria-label="Cart">
+                <i class="fas fa-shopping-cart" id="cart-icon"></i>
+            </a>
+            <a href="login.html" aria-label="User Account">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Elevate Your Style <br> With Every Step</h1>
+        <p>Explore the latest collection of premium sneakers and formal shoes.</p>
+        <a href="shop.html" class="btn">Shop Now</a>
+    </div>
+
+    <div class="hero-image">
+        <img 
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3"
+            alt="Featured premium shoe">
+    </div>
+</section>
+
+<section class="products" id="products">
+    <h2 class="section-title">Trending Now</h2>
+
+    <!-- Products will be injected dynamically -->
+    <div class="product-container" id="product-container"></div>
+</section>
+
+<footer>
+    <p>&copy; 2026 StepUp Shoes. All rights reserved.</p>
+</footer>
+
+<!-- Main JS Entry -->
+<script src="Main.js"></script>
+</body>
+</html>
