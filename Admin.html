@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - StepUp Shoes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+
+<div class="admin-wrapper">
+    <!-- Sidebar -->
+    <nav class="admin-sidebar">
+        <div class="admin-logo">
+            <h2>Step<span>Up</span> Admin</h2>
+        </div>
+        <ul>
+            <li class="active"><a href="admin.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+            <li><a href="add-product.html"><i class="fas fa-plus-circle"></i> Add Product</a></li>
+            <li><a href="manage-orders.html"><i class="fas fa-tasks"></i> Manage Orders</a></li>
+            <li><a href="customers.html"><i class="fas fa-users"></i> Customers</a></li>
+            <li><a href="admin-settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="index.html"><i class="fas fa-external-link-alt"></i> View Site</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="admin-content">
+        <header class="admin-header">
+            <h2>Dashboard Overview</h2>
+            <div class="admin-user">
+                <span>Welcome, Admin</span>
+                <i class="fas fa-user-shield"></i>
+            </div>
+        </header>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+            <div class="stat-card" data-type="sales">
+                <i class="fas fa-dollar-sign"></i>
+                <div>
+                    <h3 id="total-sales">$12,450</h3>
+                    <p>Total Sales</p>
+                </div>
+            </div>
+            <div class="stat-card" data-type="orders">
+                <i class="fas fa-shopping-bag"></i>
+                <div>
+                    <h3 id="total-orders">145</h3>
+                    <p>Orders</p>
+                </div>
+            </div>
+            <div class="stat-card" data-type="products">
+                <i class="fas fa-shoe-prints"></i>
+                <div>
+                    <h3 id="total-products">42</h3>
+                    <p>Products</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Orders Table -->
+        <div class="admin-table-container">
+            <h3>Recent Orders</h3>
+            <table id="recent-orders-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Product</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#ORD-99</td>
+                        <td>Ali Khan</td>
+                        <td>Red Nike Air</td>
+                        <td><span class="status-pending">Pending</span></td>
+                        <td><button class="edit-btn">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-98</td>
+                        <td>Sara Ahmed</td>
+                        <td>Vans Classic</td>
+                        <td><span class="status-shipped">Shipped</span></td>
+                        <td><button class="edit-btn">Edit</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+
+<script src="Admin.js"></script>
+</body>
+              </html>
