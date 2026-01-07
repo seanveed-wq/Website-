@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - StepUp Shoes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>Step<span>Up</span></h1>
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="shop.html#new">New Arrivals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <a href="cart.html" aria-label="Cart">
+                <i class="fas fa-shopping-cart" style="color:#ff4d4d;"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<section class="cart-section">
+    <h2 class="section-title">Shopping Cart</h2>
+
+    <div class="cart-container">
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+
+            <!-- Cart items injected by Cart.js -->
+            <tbody id="cart-items"></tbody>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="cart-subtotal">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td id="cart-tax">$0.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong id="cart-total">$0.00</strong></td>
+                </tr>
+            </table>
+
+            <a href="checkout.html" class="btn checkout-btn">
+                Proceed to Checkout
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 StepUp Shoes. All rights reserved.</p>
+</footer>
+
+<!-- JS -->
+<script src="Cart.js"></script>
+<script src="Main.js"></script>
+
+</body>
+                  </html>
